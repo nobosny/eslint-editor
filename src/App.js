@@ -1,5 +1,8 @@
 import React from 'react';
-import { Pane, Text } from 'evergreen-ui';
+import { Pane } from 'evergreen-ui';
+import Header from './layout/Header';
+import Content from './layout/Content';
+import Sidebar from './layout/Sidebar';
 
 const App = () => {
   return (
@@ -7,33 +10,15 @@ const App = () => {
       display="flex"
       flexDirection="column"
       height="100vh"
-      width="100%"
+      flex={1}
     >
-      <Pane
-        height={60}
-        display="flex"
-        alignItems="center"
-        background="#133C55"
-      >
-        <Text>Header</Text>
-      </Pane>
+      <Header />
       <Pane
         display="flex"
         flex={1}
-        flexDirection="row"
       >
-        <Pane
-          width={450}
-          background="#84D2F6"
-        >
-          <Text>Project</Text>
-        </Pane>
-        <Pane
-          flex={1}
-          background="#91E5F6"
-        >
-          <Text>Code</Text>
-        </Pane>
+        <Sidebar />
+        <Content />
       </Pane>
     </Pane>
   );
