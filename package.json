@@ -11,7 +11,7 @@
     "evergreen-ui": "^4.22.0",
     "filesize": "^6.1.0",
     "lodash": "^4.17.19",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-redux": "^7.2.0",
